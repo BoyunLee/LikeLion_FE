@@ -1,10 +1,17 @@
 {
   "type": "module",
   "scripts": {
-    "dev" : "node ./dist/app.js",
-    "build" : "tsc"
+    "dev": "npx vite",
+    "build": "npx vite build",
+    "start": "npx vite"
   },
   "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.7"
   }
 }
