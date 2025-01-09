@@ -108,12 +108,20 @@ class Exam {
         this.#kor = value;
     }
 
-    geteng() { 
+    get eng() {
         return this.#eng;
     }
 
-    getmath() { 
+    set eng(value) {
+        this.#eng = value;
+    }
+
+    get math() {
         return this.#math;
+    }
+
+    set math(value) {
+        this.#math = value;
     }
 
     static create() {  
@@ -128,6 +136,8 @@ class Exam {
         return this.total() / 3;
     }
 }   
+
+export default Exam;
 
 let exam = Exam.create();
 console.log(exam.total());

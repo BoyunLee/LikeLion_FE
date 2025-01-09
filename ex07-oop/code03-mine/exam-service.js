@@ -48,3 +48,6 @@ class ExamService {
         return this.#exams[index];
     }
 }
+
+const examService = new ExamService();
+export default examService;
