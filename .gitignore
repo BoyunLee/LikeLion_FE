@@ -1,0 +1,24 @@
+# Node.js 관련
+node_modules/
+.npm/
+yarn.lock
+package-lock.json
+
+# Next.js 관련
+.next/
+out/
+
+# 환경 설정 파일
+.env
+.env.local
+.env.development
+.env.production
+
+# IDE 설정
+.vscode/
+.idea/
+.DS_Store
+
+# 빌드 파일
+dist/
+build/
