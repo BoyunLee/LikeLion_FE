@@ -1,6 +1,9 @@
+/* @import url("https://cdn.jsdelivr.net/npm/newtil-css@0.2.5/dist/style.min.css"); */
+
 @font-face {
   font-family: "Pretendard-Regular";
-  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -32,7 +35,8 @@ html {
 }
 
 body {
-  font-family: "Pretendard-Regular", sans-serif;
+  /* font-family: "Pretendard-Regular", sans-serif; */
+  font-family: "Pretendard Variable", sans-serif;
   /* font-family: "Pretendard Variable", Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
@@ -41,12 +45,12 @@ body {
   height: 100%;
   /* background-color: var(--color-base-9);     */
 
-  >div {
+  > div {
     height: 100%;
     display: flex;
     flex-direction: column;
 
-    >main {
+    > main {
       flex-grow: 1;
     }
   }
