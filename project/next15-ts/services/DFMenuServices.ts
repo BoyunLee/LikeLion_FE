@@ -1,6 +1,6 @@
-import { Menu } from "@/entities/Menu";
+import { Menu } from "@/domain/entities/Menu";
 import { MenuListModel } from "@/models/MenuListModel";
-import { SbMenuRepository } from "@/repositories/SbMenuRepository";
+import { SbMenuRepository } from "@/infrastrucrute/repositories/SbMenuRepository";
 
 export class DfMenuService {
     private repository: SbMenuRepository = new SbMenuRepository();
@@ -12,7 +12,7 @@ export class DfMenuService {
 //   }
 
   async getList(): Promise<MenuListModel[]> {
-    const menus: Menu[] = await this.repository.fetchAll();
+    const menus: Menu[] = await this.repository.findAll();
 
     return menus.map((menu) => {
       const model: MenuListModel = {

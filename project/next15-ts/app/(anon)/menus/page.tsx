@@ -3,8 +3,13 @@
 import FilterForm from "@/components/menus/list/filter-form";
 import styles from "./page.module.scss";
 import Pager from "@/components/menus/list/pager";
+import { useEffect } from "react";
 
 const List = () => {
+  useEffect(() => {
+    fetch("/api/menus");
+  }, []);
+
   return (
     <main>
       <FilterForm />
